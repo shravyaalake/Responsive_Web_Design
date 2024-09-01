@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programming Language Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>C Programming Language</header>
+        <a class="nav-link" href="#Introduction_to_C">Introduction to C</a>
+        <a class="nav-link" href="#Data_Types">Data Types</a>
+        <a class="nav-link" href="#Control_Structures">Control Structures</a>
+        <a class="nav-link" href="#Functions_in_C">Functions in C</a>
+        <a class="nav-link" href="#Pointers_and_Arrays">Pointers and Arrays</a>
+    </nav>
+
+    <main id="main-doc">
+        <section id="Introduction_to_C" class="main-section">
+            <header>Introduction to C</header>
+            <p>C is a general-purpose programming language developed by Dennis Ritchie at Bell Labs in 1972. It is one of the most widely used programming languages and forms the basis for many other languages like C++, Java, and Python.</p>
+            <p>C is known for its efficiency, portability, and flexibility, making it ideal for system-level programming, embedded systems, and applications requiring high performance.</p>
+            <code>printf("Hello, World!");</code>
+        </section>
+
+        <section id="Data_Types" class="main-section">
+            <header>Data Types</header>
+            <p>C has several basic data types, including:</p>
+            <ul>
+                <li><code>int</code> - Integer type</li>
+                <li><code>float</code> - Floating point type</li>
+                <li><code>char</code> - Character type</li>
+                <li><code>double</code> - Double precision floating point type</li>
+            </ul>
+            <p>Each data type in C has a specific size and range of values it can hold, which may vary depending on the system architecture.</p>
+            <code>int age = 25;</code>
+        </section>
+
+        <section id="Control_Structures" class="main-section">
+            <header>Control Structures</header>
+            <p>C provides several control structures to manage the flow of execution in programs, including:</p>
+            <ul>
+                <li><code>if</code> - Conditional statement</li>
+                <li><code>switch</code> - Multi-way branch statement</li>
+                <li><code>for</code> - Looping statement</li>
+                <li><code>while</code> - Looping statement</li>
+            </ul>
+            <p>Control structures are essential for making decisions, repeating tasks, and branching logic in C programs.</p>
+            <code>for(int i = 0; i < 10; i++) { printf("%d ", i); }</code>
+        </section>
+
+        <section id="Functions_in_C" class="main-section">
+            <header>Functions in C</header>
+            <p>Functions are blocks of code that perform specific tasks. In C, functions help in modularizing the code, making it reusable and easier to manage.</p>
+            <p>Every C program must have a <code>main()</code> function, which is the entry point of the program.</p>
+            <code>int add(int a, int b) { return a + b; }</code>
+        </section>
+
+        <section id="Pointers_and_Arrays" class="main-section">
+            <header>Pointers and Arrays</header>
+            <p>Pointers are variables that store memory addresses, allowing for dynamic memory allocation, efficient array manipulation, and complex data structures.</p>
+            <p>Arrays are collections of elements of the same type, stored in contiguous memory locations. Pointers can be used to traverse and manipulate arrays efficiently.</p>
+            <ul>
+                <li><code>int arr[5];</code> - Declares an array of 5 integers</li>
+                <li><code>int *ptr = arr;</code> - Points to the first element of the array</li>
+            </ul>
+            <code>int *ptr = arr; <br>
+            for(int i = 0; i < 5; i++) { printf("%d ", *(ptr + i)); }</code>
+        </section>
+    </main>
+</body>
+</html>
